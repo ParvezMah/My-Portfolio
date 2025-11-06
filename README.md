@@ -125,19 +125,6 @@ npm run preview
 
 If you want to add analytics or contact form backend, integrate your chosen provider and update the contact component accordingly.
 
-## Contributing
-
-This is your personal portfolio — contributions are optional. If you'd like to accept external PRs:
-
-1. Fork the repo.
-2. Create a feature branch.
-3. Open a pull request with a short description of the change.
-
-Please run `npm run lint` before opening PRs to keep code style consistent.
-
-## License
-
-This repository is under the MIT License. Replace with the license you prefer.
 
 ## Contact
 
@@ -147,15 +134,8 @@ Example:
 
 - Email: parvezmahmudaa100@gmail.com
 - GitHub: https://github.com/ParvezMah
+- Phone: +8801850598057
 
 ---
-
-If you'd like, I can also:
-
-- add a live deploy (Vercel) config file,
-- wire up a simple contact endpoint (serverless) for form submissions, or
-- generate a small CONTRIBUTING.md and CODE_OF_CONDUCT.md.
-
-If you want any of those, tell me which and I'll add them next.
 
 
