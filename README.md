@@ -125,19 +125,6 @@ npm run preview
 
 If you want to add analytics or contact form backend, integrate your chosen provider and update the contact component accordingly.
 
-## Contributing
-
-This is your personal portfolio — contributions are optional. If you'd like to accept external PRs:
-
-1. Fork the repo.
-2. Create a feature branch.
-3. Open a pull request with a short description of the change.
-
-Please run `npm run lint` before opening PRs to keep code style consistent.
-
-## License
-
-This repository is under the MIT License. Replace with the license you prefer.
 
 ## Contact
 
