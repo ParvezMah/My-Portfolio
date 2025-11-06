@@ -6,9 +6,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © 2025 Parvez Mahamud. Built with{" "}
-            <Heart className="text-accent" size={16} fill="currentColor" />
-            and React
+            Innovating for the world by
+            Parvez Mahamud — Learning technology for future.
           </p>
         </div>
       </div>
