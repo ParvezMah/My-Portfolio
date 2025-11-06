@@ -137,12 +137,4 @@ Example:
 
 ---
 
-If you'd like, I can also:
-
-- add a live deploy (Vercel) config file,
-- wire up a simple contact endpoint (serverless) for form submissions, or
-- generate a small CONTRIBUTING.md and CODE_OF_CONDUCT.md.
-
-If you want any of those, tell me which and I'll add them next.
-
 
