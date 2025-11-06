@@ -51,7 +51,7 @@ const Navbar = () => {
             className="text-xl font-bold text-gradient cursor-pointer"
             whileHover={{ scale: 1.05 }}
           >
-            PM
+            Parvez
           </motion.a>
 
           {/* Desktop Navigation */}

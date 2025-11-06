@@ -6,37 +6,45 @@ import { ExternalLink, Github, Image } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "UpRestaurant",
+      title: "No Projects Built Yet",
       description:
-        "A comprehensive restaurant management web app with real-time order tracking, inventory management, and customer analytics. Built for efficiency and scalability.",
-      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+        "Projects will be added here very soon.",
+      tech: ["Coming Soon"],
       liveUrl: "#",
       githubUrl: "#",
     },
-    {
-      title: "ForkandFeast",
-      description:
-        "Restaurant brand platform featuring Stripe payment integration, admin dashboard for menu management, and customer reservation system.",
-      tech: ["React.js", "TypeScript", "Stripe", "Node.js", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "RideNow",
-      description:
-        "Ride-sharing platform with role-based authentication for Drivers and Riders, real-time location tracking, and secure payment processing.",
-      tech: ["React.js", "Node.js", "MongoDB", "Socket.io", "JWT"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "TechBlog",
-      description:
-        "A modern blogging platform with markdown support, user authentication, comment system, and SEO optimization. Built for developers.",
-      tech: ["React.js", "Express.js", "MongoDB", "Redux", "Material UI"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
+    // {
+    //   title: "UpRestaurant",
+    //   description:
+    //     "A comprehensive restaurant management web app with real-time order tracking, inventory management, and customer analytics. Built for efficiency and scalability.",
+    //   tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+    //   liveUrl: "#",
+    //   githubUrl: "#",
+    // },
+    // {
+    //   title: "ForkandFeast",
+    //   description:
+    //     "Restaurant brand platform featuring Stripe payment integration, admin dashboard for menu management, and customer reservation system.",
+    //   tech: ["React.js", "TypeScript", "Stripe", "Node.js", "PostgreSQL"],
+    //   liveUrl: "#",
+    //   githubUrl: "#",
+    // },
+    // {
+    //   title: "RideNow",
+    //   description:
+    //     "Ride-sharing platform with role-based authentication for Drivers and Riders, real-time location tracking, and secure payment processing.",
+    //   tech: ["React.js", "Node.js", "MongoDB", "Socket.io", "JWT"],
+    //   liveUrl: "#",
+    //   githubUrl: "#",
+    // },
+    // {
+    //   title: "TechBlog",
+    //   description:
+    //     "A modern blogging platform with markdown support, user authentication, comment system, and SEO optimization. Built for developers.",
+    //   tech: ["React.js", "Express.js", "MongoDB", "Redux", "Material UI"],
+    //   liveUrl: "#",
+    //   githubUrl: "#",
+    // },
   ];
 
   const containerVariants = {
@@ -75,7 +83,8 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+          className="grid md:grid-cols-1 gap-8 max-w-6xl mx-auto"
+          // className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
         >
           {projects.map((project) => (
             <motion.div
@@ -108,7 +117,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
                   <Button
                     size="sm"
                     className="flex-1 bg-primary hover:bg-primary/90"
@@ -130,7 +139,8 @@ const Projects = () => {
                       Source Code
                     </a>
                   </Button>
-                </div>
+                </div> */}
+                
               </div>
             </motion.div>
           ))}

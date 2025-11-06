@@ -39,7 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/80 mb-6"
           >
-            Full Stack Developer | React.js | MERN Stack | TypeScript
+            A Full Stack Developer in MERN & TypeScript ecosystem 
           </motion.h2>
 
           <motion.p
@@ -48,7 +48,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            I build scalable web applications and modern user experiences
+            I am seriously eager to build innovative and scalable web applications that make an impact.
           </motion.p>
 
           <motion.div
