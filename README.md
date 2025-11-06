@@ -134,6 +134,7 @@ Example:
 
 - Email: parvezmahmudaa100@gmail.com
 - GitHub: https://github.com/ParvezMah
+- Phone: +8801850598057
 
 ---
 
