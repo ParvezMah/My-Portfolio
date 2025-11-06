@@ -53,25 +53,23 @@ const About = () => {
               <span className="text-foreground font-semibold">
                 Parvez Mahamud
               </span>
-              , a self-taught full stack developer from Bangladesh. I build
+              , A self-taught full stack developer from Bangladesh. I build
               end-to-end web applications using React.js, Node.js, and MongoDB.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My goal is to create impactful digital solutions that help
-              businesses grow and thrive. With experience in modern frameworks
-              and a passion for clean, efficient code, I turn complex problems
+              My goal is to create impactful digital solutions. With experience in modern frameworks
+              and a passion for clean, efficient code, I always try to turn complex problems
               into elegant solutions.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, I'm learning new technologies, contributing
-              to open source, or working on exciting freelance projects.
+              When I'm not coding, I'm learning new technologies.
             </p>
 
             <a
-              href="/src/assets/Parvez_Mahamud_Resume. .pdf"
-              download="/src/assets/Parvez_Mahamud_Resume. .pdf"
+              href="/Parvez_Mahamud_Resume. .pdf"
+              download="/Parvez_Mahamud_Resume. .pdf"
             >
               <Button
                 size="lg"
