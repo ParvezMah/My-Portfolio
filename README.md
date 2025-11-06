@@ -1,73 +1,161 @@
-# Welcome to your Lovable project
+# Parvez Mahamud — Portfolio
 
-## Project info
+> A personal portfolio website built with Vite, React + TypeScript, Tailwind CSS and shadcn/ui components. This repository contains the source for a responsive, accessible portfolio showcasing projects, skills, experience and contact information.
 
-**URL**: https://lovable.dev/projects/4a966e59-a37b-4310-ba6a-a67771eed26a
+---
 
-## How can I edit this code?
+## Table of contents
 
-There are several ways of editing your application.
+- About
+- Demo / Live
+- Features
+- Tech stack
+- Getting started (local)
+- Available scripts
+- Project structure
+- Deployment
+- Customization
+- Contributing
+- License
+- Contact
+---
 
-**Use Lovable**
+## About
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4a966e59-a37b-4310-ba6a-a67771eed26a) and start prompting.
+This is a modern single-page portfolio built with Vite and React (TypeScript). It uses Tailwind CSS for styling and a component library inspired by shadcn/ui and Radix primitives. The site is designed to be fast, accessible and easy to customize.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Demo / Live
 
-**Use your preferred IDE**
+Live: https://parvez-mahamud-portfolio.vercel.app
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+*(Update this link after you deploy.)*
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Features
 
-Follow these steps:
+- Modern React + TypeScript codebase
+- Vite-powered fast dev server and build
+- Responsive layout built with Tailwind CSS
+- Reusable UI components (shadcn-style + Radix primitives)
+- Dark / Light theme toggle
+- Projects, Experience, Skills sections and Contact form (UI)
+- Accessible markup and keyboard-friendly components
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Tech stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI primitives
+- shadcn-style component patterns
+- Framer Motion (animations)
+- React Router
+- TanStack Query (data fetching patterns)
+- ESLint + TypeScript for quality checks
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Getting started (local)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Prerequisites
+
+- Node.js 18+ recommended
+- npm (or pnpm/bun) installed
+
+Clone the repo and install dependencies:
+
+PowerShell
+
+```powershell
+git clone https://github.com/ParvezMah/My-Portfolio.git
+
+npm install
+```
+
+Start the dev server:
+
+```powershell
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Available scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+These scripts are defined in `package.json`:
 
-**Use GitHub Codespaces**
+- `npm run dev` — start Vite dev server
+- `npm run build` — build for production (vite build)
+- `npm run build:dev` — build in development mode
+- `npm run preview` — locally preview the production build
+- `npm run lint` — run ESLint across the codebase
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Use `npm run <script>` or `bun run <script>` depending on your package manager.
 
-## What technologies are used for this project?
+## Project structure (important files)
 
-This project is built with:
+- `index.html` — app shell
+- `src/main.tsx` — React entry
+- `src/App.tsx` — top-level app
+- `src/components/` — page sections and shared components (Hero, About, Projects, Contact, Navbar, Footer, etc.)
+- `src/components/ui/` — small UI primitives and re-usable components
+- `src/pages/` — route pages (Index, NotFound)
+- `src/hooks/` — custom React hooks
+- `src/lib/` — small utilities
+- `public/` — static assets served as-is
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+This site can be deployed to Vercel, Cloudflare Pages, or any static hosting provider that supports Vite builds.
 
-Simply open [Lovable](https://lovable.dev/projects/4a966e59-a37b-4310-ba6a-a67771eed26a) and click on Share -> Publish.
+Typical steps (Vercel):
 
-## Can I connect a custom domain to my Lovable project?
+1. Connect the GitHub repository.
+2. Set the build command: `npm run build` (or `bun build`), and the publish directory: `dist`.
+3. Deploy — the provider will run the build and publish the site.
 
-Yes, you can!
+For a manual preview locally after building:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```powershell
+npm run build
+npm run preview
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Customization
+
+- Change your name, headline and bio in `src/components/Hero.tsx` and related components.
+- Update projects in `src/components/Projects.tsx` (or wherever your project list is stored).
+- Update images/assets in `src/assets/` and reference them from components.
+- Theme colors and Tailwind config: `tailwind.config.ts` and `index.css` / `App.css`.
+
+If you want to add analytics or contact form backend, integrate your chosen provider and update the contact component accordingly.
+
+## Contributing
+
+This is your personal portfolio — contributions are optional. If you'd like to accept external PRs:
+
+1. Fork the repo.
+2. Create a feature branch.
+3. Open a pull request with a short description of the change.
+
+Please run `npm run lint` before opening PRs to keep code style consistent.
+
+## License
+
+This repository is under the MIT License. Replace with the license you prefer.
+
+## Contact
+
+Add your contact information or preferred social links here.
+
+Example:
+
+- Email: parvezmahmudaa100@gmail.com
+- GitHub: https://github.com/ParvezMah
+
+---
+
+If you'd like, I can also:
+
+- add a live deploy (Vercel) config file,
+- wire up a simple contact endpoint (serverless) for form submissions, or
+- generate a small CONTRIBUTING.md and CODE_OF_CONDUCT.md.
+
+If you want any of those, tell me which and I'll add them next.
+
+
