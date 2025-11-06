@@ -22,7 +22,6 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
-  
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";

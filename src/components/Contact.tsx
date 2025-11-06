@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send, Github, Linkedin, MessageSquare } from "lucide-react";
+import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp, SiX } from "react-icons/si";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -16,7 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -38,24 +39,29 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: Github,
-      href: "https://github.com",
+      icon: SiGithub,
+      href: "https://github.com/ParvezMah",
       label: "GitHub",
     },
     {
-      icon: Linkedin,
-      href: "https://linkedin.com",
+      icon: SiLinkedin,
+      href: "https://www.linkedin.com/in/parvez-mahamud/",
       label: "LinkedIn",
     },
     {
-      icon: Mail,
-      href: "mailto:contact@example.com",
-      label: "Email",
+      icon: SiGmail,
+      href: "parvezmahmudaa100@gmail.com",
+      label: "Gmail",
     },
     {
-      icon: MessageSquare,
+      icon: SiWhatsapp,
       href: "https://wa.me/",
       label: "WhatsApp",
+    },
+    {
+      icon: SiX,
+      href: "https://wa.me/",
+      label: "Twitter",
     },
   ];
 
@@ -70,7 +76,8 @@ const Contact = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Let's Build Something <span className="text-gradient">Great Together</span>
+            Let's Build Something{" "}
+            <span className="text-gradient">Great Together</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </motion.div>

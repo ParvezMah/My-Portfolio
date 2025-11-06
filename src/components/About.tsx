@@ -30,9 +30,9 @@ const About = () => {
           >
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl glass-card overflow-hidden border-2 border-primary/30 glow-on-hover">
-                <img 
-                  src={profileImage} 
-                  alt="Parvez Mahamud - Full Stack Developer" 
+                <img
+                  src={profileImage}
+                  alt="Parvez Mahamud - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -49,29 +49,38 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm <span className="text-foreground font-semibold">Parvez Mahamud</span>, 
-              a self-taught full stack developer from Bangladesh. I build end-to-end 
-              web applications using React.js, Node.js, and MongoDB.
-            </p>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My goal is to create impactful digital solutions that help businesses 
-              grow and thrive. With experience in modern frameworks and a passion for 
-              clean, efficient code, I turn complex problems into elegant solutions.
+              I'm{" "}
+              <span className="text-foreground font-semibold">
+                Parvez Mahamud
+              </span>
+              , a self-taught full stack developer from Bangladesh. I build
+              end-to-end web applications using React.js, Node.js, and MongoDB.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, I'm learning new technologies, contributing to 
-              open source, or working on exciting freelance projects.
+              My goal is to create impactful digital solutions that help
+              businesses grow and thrive. With experience in modern frameworks
+              and a passion for clean, efficient code, I turn complex problems
+              into elegant solutions.
             </p>
 
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 glow-on-hover mt-6"
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              When I'm not coding, I'm learning new technologies, contributing
+              to open source, or working on exciting freelance projects.
+            </p>
+
+            <a
+              href="/src/assets/Parvez_Mahamud_Resume. .pdf"
+              download="/src/assets/Parvez_Mahamud_Resume. .pdf"
             >
-              <Download className="mr-2" size={20} />
-              Download Resume
-            </Button>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 glow-on-hover mt-6"
+              >
+                <Download className="mr-2" size={20} />
+                Download Resume
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>
