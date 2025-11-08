@@ -1,11 +1,12 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Send, Github, Linkedin, MessageSquare } from "lucide-react";
-import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp, SiX } from "react-icons/si";
 import { useToast } from "@/hooks/use-toast";
+import { motion } from "framer-motion";
+import { Send } from "lucide-react";
+import { useState } from "react";
+import { SiGithub, SiGmail, SiLinkedin, SiX } from "react-icons/si";
+import { FaMobileScreenButton } from "react-icons/fa6";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -54,14 +55,13 @@ const Contact = () => {
       label: "Gmail",
     },
     {
-      icon: SiWhatsapp,
-      href: "https://wa.me/",
-      label: "WhatsApp",
-    },
-    {
       icon: SiX,
       href: "https://wa.me/",
       label: "Twitter",
+    },
+    {
+      icon: FaMobileScreenButton,
+      label: "+8801850-598057",
     },
   ];
 

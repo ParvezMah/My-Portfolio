@@ -29,7 +29,7 @@ const About = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl glass-card overflow-hidden border-2 border-primary/30 glow-on-hover">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full glass-card overflow-hidden border-2 border-primary/30 glow-on-hover">
                 <img
                   src={profileImage}
                   alt="Parvez Mahamud - Full Stack Developer"

@@ -1,30 +1,33 @@
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap } from "lucide-react";
 
-const Experience = () => {
+const Education = () => {
   const timeline = [
     {
-      type: "work",
-      title: "Web Developer",
-      organization: "Self-Employed",
-      period: "2024 to Present",
-      description:
-        "Building and deploying modern web applications for businesses. Specializing in full-stack development with React.js, Node.js, and MongoDB.",
+      type: "education",
+      title: "Degree BA Pass",
+      organization: "Patiya Govt College",
+      period: "2022 to Present - 3rd Year Running",
+      icon: GraduationCap,
+    },
+    {
+      type: "education",
+      title: "HSC (Higher Secondary Certificate)",
+      organization: "B G C Trust School and College",
+      period: "2017 to 2019",
       icon: Briefcase,
     },
     {
-      type: "work",
-      title: "Computer Operator",
-      organization: "Fashion Watch Ltd (Garments Industry)",
-      period: "March-2021 to Sep-2025 - 4 Years 6 Months",
-      description:
-        "Learned discipline, problem-solving, and team collaboration. Developed strong work ethic and attention to detail.",
-      icon: Briefcase,
+      type: "education",
+      title: "SSC (Secondary School Certificate)",
+      organization: "Hashimpur Makbulia Madrasah",
+      period: "2015 to 2017",
+      icon: GraduationCap,
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-secondary/20">
+    <section id="education" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +37,7 @@ const Experience = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-gradient">Experience</span>
+              <span className="text-gradient">Education</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </motion.div>
@@ -66,10 +69,6 @@ const Experience = () => {
                 <p className="text-primary font-medium mb-3">
                   {item.organization}
                 </p>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
               </div>
             </motion.div>
           ))}
@@ -79,4 +78,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
