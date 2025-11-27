@@ -68,7 +68,9 @@ const About = () => {
             </p>
 
             <a
-              href="/public/Parvez-Mahamud-Resume.pdf"
+              href="https://uk1yprr4tckjdlgu.public.blob.vercel-storage.com/Parvez-Mahamud-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               download
             >
               <Button
