@@ -68,8 +68,8 @@ const About = () => {
             </p>
 
             <a
-              href="/Parvez_Mahamud_Resume. .pdf"
-              download="/Parvez_Mahamud_Resume. .pdf"
+              href="/public/Parvez-Mahamud-Resume.pdf"
+              download
             >
               <Button
                 size="lg"
