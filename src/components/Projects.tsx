@@ -2,49 +2,29 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Image } from "lucide-react";
+import goTripImage from "@/assets/images/GoTrip-Project Image.png";
+import librarianImage from "@/assets/images/Librarian-Project Image.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "No Projects Built Yet",
-      description:
-        "Projects will be added here very soon.",
-      tech: ["Coming Soon"],
+      title: "GoTrip",
+      description: "Ride Booking Management System.",
+      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
       liveUrl: "#",
-      githubUrl: "#",
+      fronendRepo: "#",
+      backendRepo: "#",
+      image: goTripImage,
     },
-    // {
-    //   title: "UpRestaurant",
-    //   description:
-    //     "A comprehensive restaurant management web app with real-time order tracking, inventory management, and customer analytics. Built for efficiency and scalability.",
-    //   tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "ForkandFeast",
-    //   description:
-    //     "Restaurant brand platform featuring Stripe payment integration, admin dashboard for menu management, and customer reservation system.",
-    //   tech: ["React.js", "TypeScript", "Stripe", "Node.js", "PostgreSQL"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "RideNow",
-    //   description:
-    //     "Ride-sharing platform with role-based authentication for Drivers and Riders, real-time location tracking, and secure payment processing.",
-    //   tech: ["React.js", "Node.js", "MongoDB", "Socket.io", "JWT"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "TechBlog",
-    //   description:
-    //     "A modern blogging platform with markdown support, user authentication, comment system, and SEO optimization. Built for developers.",
-    //   tech: ["React.js", "Express.js", "MongoDB", "Redux", "Material UI"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
+    {
+      title: "Librarian",
+      description: "A Complete Library Management System",
+      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      liveUrl: "#",
+      fronendRepo: "#",
+      backendRepo: "#",
+      image: librarianImage,
+    },
   ];
 
   const containerVariants = {
@@ -83,7 +63,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-1 gap-8 max-w-6xl mx-auto"
+          className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
           // className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
         >
           {projects.map((project) => (
@@ -92,15 +72,23 @@ const Projects = () => {
               variants={itemVariants}
               className="glass-card rounded-xl overflow-hidden hover-lift glow-on-hover"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <Image className="w-24 h-24 text-primary/40" />
-              </div>
-              
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={`${project.title} Screenshot`}
+                  className="w-full h-48 object-cover"
+                />
+              ) : (
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <Image className="w-24 h-24 text-primary/40" />
+                </div>
+              )}
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-foreground">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
@@ -117,13 +105,17 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* <div className="flex gap-3">
+                <div className="flex gap-3">
                   <Button
                     size="sm"
                     className="flex-1 bg-primary hover:bg-primary/90"
                     asChild
                   >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink className="mr-2" size={16} />
                       Live Demo
                     </a>
@@ -134,13 +126,31 @@ const Projects = () => {
                     className="flex-1 border-primary/30 text-primary hover:bg-primary/10"
                     asChild
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.fronendRepo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github className="mr-2" size={16} />
-                      Source Code
+                      Frontend
                     </a>
                   </Button>
-                </div> */}
-                
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 border-primary/30 text-primary hover:bg-primary/10"
+                    asChild
+                  >
+                    <a
+                      href={project.backendRepo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-2" size={16} />
+                      Backend
+                    </a>
+                  </Button>
+                </div>
               </div>
             </motion.div>
           ))}
