@@ -11,9 +11,9 @@ const Projects = () => {
       title: "GoTrip",
       description: "Ride Booking Management System.",
       tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      liveUrl: "#",
-      fronendRepo: "#",
-      backendRepo: "#",
+      liveUrl: "https://a6-go-trip-ride-booking-management.vercel.app",
+      fronendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Frontend",
+      backendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Backend",
       image: goTripImage,
     },
     {
