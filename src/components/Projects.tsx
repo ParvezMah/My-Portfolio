@@ -20,9 +20,9 @@ const Projects = () => {
       title: "Librarian",
       description: "A Complete Library Management System",
       tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      liveUrl: "#",
-      fronendRepo: "#",
-      backendRepo: "#",
+      liveUrl: "https://l2-b5-a4-library-management-fronten.vercel.app",
+      fronendRepo: "https://github.com/ParvezMah/Librarian-Library-Management-System-Frontend",
+      backendRepo: "https://github.com/ParvezMah/Librarian-Library-Management-System-Backend",
       image: librarianImage,
     },
   ];
