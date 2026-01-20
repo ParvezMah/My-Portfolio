@@ -64,14 +64,24 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
+
+            <motion.div
+              whileHover={{scale: 1.1}}
+              whileTap={{scale: 1.05}}
+            >
+              <Button
               size="lg"
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary/90 glow-on-hover text-lg px-8"
+              >
+                Hire Me
+              </Button>
+            </motion.div>
+            <motion.div
+              whileHover={{scale: 1.1}}
+              whileTap={{scale: 1.5}}
             >
-              Hire Me
-            </Button>
-            <Button
+              <Button
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
@@ -79,6 +89,7 @@ const Hero = () => {
             >
               <a href="#projects">View Projects</a>
             </Button>
+            </motion.div>
           </motion.div>
         </div>
 

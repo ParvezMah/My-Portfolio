@@ -67,20 +67,32 @@ const About = () => {
               When I'm not coding, I'm learning new technologies.
             </p>
 
-            <a
-              href="https://uk1yprr4tckjdlgu.public.blob.vercel-storage.com/Parvez-Mahamud-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 glow-on-hover mt-6"
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.05 }}>
+              <a
+                href="https://uk1yprr4tckjdlgu.public.blob.vercel-storage.com/Parvez-Mahamud-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
               >
-                <Download className="mr-2" size={20} />
-                Download Resume
-              </Button>
-            </a>
+                
+                {/* <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 glow-on-hover mt-6"
+                >
+                  <Download className="mr-2" size={20} />
+                  Download Resume
+                </Button> */}
+
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 glow-on-hover mt-6"
+                  >
+                    <Download className="mr-2" size={20} />
+                    Download Resume
+                  </Button>
+
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>
