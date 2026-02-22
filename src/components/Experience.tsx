@@ -5,20 +5,41 @@ const Experience = () => {
   const timeline = [
     {
       type: "work",
+      title: "Frontend Developer (Intern)",
+      organization: "Weero Digital",
+      projects: [
+        {name: "WeepCheez", type: "Fashion, LifeStyle & Clothing Brand"},
+      ],
+      period: "Feb 2026 to Present",
+      description: [
+        "Developing a fully responsive e-commerce frontend for a clothing brand using React and Tailwind CSS.",
+        "Building reusable UI components including product cards, grids, sliders, and navigation.",
+        "Implementing mobile-first responsive layouts improving mobile UX.",
+        "Integrating REST APIs to fetch and display dynamic product data",
+        "Optimizing frontend performance and loading experience.",
+      ],
+      icon: Briefcase,
+    },
+    {
+      type: "work",
       title: "Web Developer",
       organization: "Self-Employed",
+      projects: [],
       period: "2024 to Present",
-      description:
+      description: [
         "Building and deploying modern web applications for businesses. Specializing in full-stack development with React.js, Node.js, and MongoDB.",
+      ],
       icon: Briefcase,
     },
     {
       type: "work",
       title: "Computer Operator",
       organization: "Fashion Watch Ltd (Garments Industry)",
+      projects: [],
       period: "March-2021 to Sep-2025 - 4 Years 6 Months",
-      description:
+      description: [
         "Learned discipline, problem-solving, and team collaboration. Developed strong work ethic and attention to detail.",
+      ],
       icon: Briefcase,
     },
   ];
@@ -64,12 +85,23 @@ const Experience = () => {
                 </div>
                 
                 <p className="text-primary font-medium mb-3">
-                  {item.organization}
+                  Compnay : {item.organization}
+                </p>
+
+                <p className="text-primary font-medium mb-3">
+                  Current Project : {item.projects.map((project) => project.name + " - " + project.type).join(", ")}
                 </p>
                 
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
+                {/* <p className="text-muted-foreground leading-relaxed">
+                  {item.description}<br/>
+                </p> */}
+
+               <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-1">
+                  {item.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+
               </div>
             </motion.div>
           ))}

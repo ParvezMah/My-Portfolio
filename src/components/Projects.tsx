@@ -5,18 +5,20 @@ import { ExternalLink, Github, Image } from "lucide-react";
 import goTripImage from "@/assets/images/GoTrip-Project Image.png";
 import librarianImage from "@/assets/images/Librarian-Project Image.png";
 
+// https://prnt.sc/2fW80PHsleaT
+
 const Projects = () => {
   const projects = [
-    {
-      title: "GoTrip",
-      description: "Ride Booking Management System.",
-      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      liveUrl: "https://a6-go-trip-ride-booking-management.vercel.app",
-      fronendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Frontend",
-      backendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Backend",
-      image: goTripImage,
+      {
+      title: "WeepCheez",
+      description: "A Fashion, Lifestyle and Clothing Brand",
+      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Redux Toolkit"],
+      liveUrl: "",
+      fronendRepo: "",
+      backendRepo: "",
+      image: "https://i.ibb.co/HD2ym5yd/Weep-Cheez-Project.png",
     },
-    {
+      {
       title: "Librarian",
       description: "A Complete Library Management System",
       tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
@@ -25,6 +27,15 @@ const Projects = () => {
       backendRepo: "https://github.com/ParvezMah/Librarian-Library-Management-System-Backend",
       image: librarianImage,
     },
+    // {
+    //   title: "GoTrip",
+    //   description: "Ride Booking Management System.",
+    //   tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+    //   liveUrl: "https://a6-go-trip-ride-booking-management.vercel.app",
+    //   fronendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Frontend",
+    //   backendRepo: "https://github.com/ParvezMah/GoTrip-Ride-Booking-Management-System-Backend",
+    //   image: goTripImage,
+    // },
   ];
 
   const containerVariants = {
@@ -63,7 +74,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+          className="grid md:grid-cols-1 gap-8 max-w-6xl mx-auto"
           // className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
         >
           {projects.map((project) => (
